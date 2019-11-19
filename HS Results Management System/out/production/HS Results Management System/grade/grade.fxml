@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="windowCurrent" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grade.Grade">
+   <children>
+      <Separator layoutY="24.0" prefWidth="1366.0" />
+      <HBox layoutX="254.0" layoutY="56.0" prefHeight="40.0" prefWidth="1105.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ComboBox fx:id="classCB" prefHeight="25.0" prefWidth="101.0" promptText="--CLASS--" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <ComboBox fx:id="subjectCB" prefHeight="25.0" prefWidth="112.0" promptText="--SUBJECT--" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="a" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="aminus" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="bplus" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="b" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="bminus" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="cplus" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="c" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="cminus" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="dplus" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="d" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="dminus" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <TextField fx:id="e" layoutY="10.0" prefHeight="25.0" prefWidth="60.0" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Button mnemonicParsing="false" onAction="#insertGrades" text="ADD" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Button mnemonicParsing="false" onAction="#updateData" text="EDIT" />
+         </children>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Separator layoutX="254.0" layoutY="94.0" prefWidth="1105.0" />
+      <Separator layoutX="254.0" layoutY="55.0" prefWidth="1105.0" />
+      <HBox layoutX="251.0" layoutY="26.0" prefHeight="25.0" prefWidth="1105.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label prefHeight="17.0" prefWidth="103.0" text="Class" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="114.0" text="Subject" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="113.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="A" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="216.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="A-" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="319.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="B+" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="422.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="B" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="525.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="B-" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="628.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="C+" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="731.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="C" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="834.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="C-" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="937.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="D+" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="1040.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="D" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="1077.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="D-" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Label layoutX="1084.0" layoutY="10.0" prefHeight="17.0" prefWidth="60.0" text="E" />
+         </children>
+         <padding>
+            <Insets left="5.0" top="3.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="tableGrades" layoutX="254.0" layoutY="100.0" onMouseClicked="#setEdit" prefHeight="601.0" prefWidth="1105.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="Id" visible="false" />
+            <TableColumn fx:id="classColumn" prefWidth="75.0" text="Class" />
+            <TableColumn fx:id="subjectColumn" prefWidth="91.0" text="Subject" />
+            <TableColumn fx:id="aColumn" prefWidth="59.0" text="A" />
+            <TableColumn fx:id="aMinusColumn" prefWidth="75.0" text="A-" />
+            <TableColumn fx:id="bPlusColumn" prefWidth="75.0" text="B+" />
+            <TableColumn fx:id="bColumn" prefWidth="75.0" text="B" />
+            <TableColumn fx:id="bMinusColumn" prefWidth="75.0" text="B-" />
+            <TableColumn fx:id="cPlusColumn" prefWidth="75.0" text="C+" />
+            <TableColumn fx:id="cColumn" prefWidth="75.0" text="C" />
+            <TableColumn fx:id="cMinusColumn" prefWidth="75.0" text="C-" />
+            <TableColumn fx:id="dPlusColumn" prefWidth="75.0" text="D+" />
+            <TableColumn fx:id="dColumn" prefWidth="75.0" text="D" />
+            <TableColumn fx:id="dMinusColumn" prefWidth="75.0" text="D-" />
+            <TableColumn fx:id="eColumn" prefWidth="75.0" text="E" />
+         </columns>
+      </TableView>
+      <Label layoutX="88.0" layoutY="29.0" text="Comments">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aComment" layoutX="30.0" layoutY="64.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="68.0" text="A">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="4.0" layoutY="25.0" orientation="VERTICAL" prefHeight="565.0" />
+      <Separator layoutX="26.0" layoutY="25.0" orientation="VERTICAL" prefHeight="565.0" />
+      <Separator layoutY="48.0" prefWidth="250.0" />
+      <Separator layoutY="91.0" prefWidth="250.0" />
+      <TextField fx:id="aMinusComment" layoutX="30.0" layoutY="97.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="7.0" layoutY="101.0" text="A-">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="124.0" prefWidth="250.0" />
+      <TextField fx:id="bPlusComment" layoutX="30.0" layoutY="127.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="131.0" text="B+">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="154.0" prefWidth="250.0" />
+      <TextField fx:id="bComment" layoutX="30.0" layoutY="157.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="9.0" layoutY="161.0" text="B">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="184.0" prefWidth="250.0" />
+      <TextField fx:id="bMinusComment" layoutX="30.0" layoutY="188.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="192.0" text="B-">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="215.0" prefWidth="250.0" />
+      <TextField fx:id="cPlusComment" layoutX="30.0" layoutY="219.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="223.0" text="C+">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="246.0" prefWidth="250.0" />
+      <TextField fx:id="cComment" layoutX="30.0" layoutY="250.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="254.0" text="C">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="277.0" prefWidth="250.0" />
+      <TextField fx:id="cMinusComment" layoutX="30.0" layoutY="281.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="285.0" text="C-">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="308.0" prefWidth="250.0" />
+      <TextField fx:id="dPlusComment" layoutX="30.0" layoutY="312.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="316.0" text="D+">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="339.0" prefWidth="250.0" />
+      <TextField fx:id="dComment" layoutX="30.0" layoutY="343.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="347.0" text="D">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="370.0" prefWidth="250.0" />
+      <TextField fx:id="dMinusComment" layoutX="30.0" layoutY="374.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="378.0" text="D-">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="401.0" prefWidth="250.0" />
+      <TextField fx:id="eComment" layoutX="30.0" layoutY="405.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="8.0" layoutY="409.0" text="E">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="432.0" prefWidth="250.0" />
+      <Button layoutX="32.0" layoutY="443.0" mnemonicParsing="false" onAction="#setComments" prefHeight="25.0" prefWidth="60.0" text="Add" />
+      <Button layoutX="160.0" layoutY="443.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Edit" />
+      <Button layoutX="95.0" layoutY="443.0" mnemonicParsing="false" onAction="#updateComments" prefHeight="25.0" prefWidth="60.0" text="Edit" />
+      <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="1366.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#synchronize" text="Synchronize" />
+                  <MenuItem mnemonicParsing="false" onAction="#Backup" text="Backup system" />
+                  <MenuItem mnemonicParsing="false" onAction="#adminMode" text="Admin Mode" />
+                  <MenuItem mnemonicParsing="false" text="Search Results" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeSystem" text="Close system" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Admin">
+               <items>
+                  <Menu mnemonicParsing="false" text="Students">
+                     <items>
+                        <MenuItem fx:id="addBar" mnemonicParsing="false" onAction="#addStudent" text="Add Students" />
+                        <MenuItem mnemonicParsing="false" text="View Students" />
+                        <MenuItem mnemonicParsing="false" onAction="#openSubjectSelection" text="Subject Selection" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#openGrading" text="Grading" />
+                  <MenuItem mnemonicParsing="false" onAction="#openTeacher" text="Teachers" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Marks Entry">
+               <items>
+                  <Menu mnemonicParsing="false" text="Form 1">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryEng" text="English" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryKis" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryMat" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryChem" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryPhy" text="Physics" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryBio" text="Biology" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryHis" text="History" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryGeo" text="Geography" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryCre" text="Cre" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryBus" text="Business" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF1T1EntryAgri" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 2">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryEng" text="English" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryKis" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryMat" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryChem" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryPhy" text="Physics" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryBio" text="Biology" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryHis" text="History" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryGeo" text="Geography" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryCre" text="Cre" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryBus" text="Business" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF2T1EntryAgri" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 3">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryEng" text="English" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryKis" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryMat" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryChem" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryPhy" text="Physics" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryBio" text="Biology" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryHis" text="History" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryGeo" text="Geography" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryCre" text="Cre" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryBus" text="Business" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF3T1EntryAgri" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 4">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryEng" text="English" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryKis" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryMat" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryChem" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryPhy" text="Physics" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryBio" text="Biology" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryHis" text="History" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryGeo" text="Geography" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryCre" text="Cre" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryBus" text="Business" />
+                        <MenuItem mnemonicParsing="false" onAction="#openF4T1EntryAgri" text="Agriculture" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Results">
+               <items>
+                  <Menu mnemonicParsing="false" text="Form 1">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T1Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T1Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T1Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T1Avg" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T2Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T2Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T2Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T2Avg" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T3Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T3Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T3Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF1T3Avg" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 2">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T1Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T1Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T1Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T1Avg" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T2Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T2Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T2Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T2Avg" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T3Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T3Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T3Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF2T3Avg" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 3">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T1Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T1Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T1Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T1Avg" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T2Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T2Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T2Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T2Avg" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T3Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T3Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T3Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF3T3Avg" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 4">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T1Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T1Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T1Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T1Avg" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T2Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T2Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T2Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T2Avg" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T3Ex1" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T3Ex2" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T3Ex3" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#openF4T3Avg" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#openAbout" text="About" />
+                  <MenuItem mnemonicParsing="false" text="Licenses" />
+                  <MenuItem mnemonicParsing="false" text="Registration code" />
+                  <MenuItem mnemonicParsing="false" text="User Manual" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

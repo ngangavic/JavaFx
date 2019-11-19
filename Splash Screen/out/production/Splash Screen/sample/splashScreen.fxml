@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SplashScreen">
+   <children>
+      <Label layoutX="121.0" layoutY="118.0" text="Needle Tester Softwares" textFill="WHITE">
+         <font>
+            <Font name="Bodoni Bd BT Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="161.0" text="Version 1.0.1" textFill="WHITE" />
+      <Line endX="100.0" layoutX="141.0" layoutY="295.0" startX="-100.0" stroke="#10e41e" strokeLineJoin="BEVEL" strokeMiterLimit="20.0" strokeWidth="4.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Label fx:id="progress" layoutX="310.0" layoutY="283.0" prefHeight="25.0" prefWidth="143.0" text="Loading..." textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="141.0" layoutY="281.0" startX="-100.0" stroke="#10e41e" strokeLineJoin="BEVEL" strokeMiterLimit="20.0" strokeWidth="4.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Line endX="100.0" layoutX="141.0" layoutY="309.0" startX="-100.0" stroke="#10e41e" strokeLineJoin="BEVEL" strokeMiterLimit="20.0" strokeWidth="4.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Line endX="100.0" layoutX="142.0" layoutY="237.0" startX="-100.0" stroke="#10e41e" strokeLineJoin="BEVEL" strokeMiterLimit="20.0" strokeWidth="4.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Line endX="100.0" layoutX="142.0" layoutY="252.0" startX="-100.0" stroke="#10e41e" strokeLineJoin="BEVEL" strokeMiterLimit="20.0" strokeWidth="4.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Line endX="100.0" layoutX="142.0" layoutY="266.0" startX="-100.0" stroke="#10e41e" strokeLineJoin="BEVEL" strokeMiterLimit="20.0" strokeWidth="4.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Line>
+      <Separator layoutX="-3.0" layoutY="327.0" prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: #fff;" />
+      <Label layoutX="201.0" layoutY="352.0" text="\@2018 Needle Tester Softwares" textFill="WHITE" />
+   </children>
+</AnchorPane>

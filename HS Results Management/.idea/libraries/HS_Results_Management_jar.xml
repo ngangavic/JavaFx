@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="HS_Results_Management_jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/HS_Results_Management_jar/HSResultsManagement.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/HS_Results_Management_jar/HS Results Management.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

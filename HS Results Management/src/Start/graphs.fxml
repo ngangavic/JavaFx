@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Start.Graphs">
+   <children>
+      <BarChart layoutX="14.0" layoutY="217.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart layoutX="605.0" layoutY="227.0" />
+      <MenuBar fx:id="menuBar" layoutY="1.0" prefHeight="25.0" prefWidth="1366.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Synchronize" />
+                  <MenuItem mnemonicParsing="false" text="Backup system" />
+                  <MenuItem mnemonicParsing="false" text="Search Results" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeSystem" text="Close system" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Admin">
+               <items>
+                  <Menu mnemonicParsing="false" text="Students">
+                     <items>
+                        <MenuItem fx:id="addBar" mnemonicParsing="false" onAction="#clickAddStudents" text="Add Students" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickViewStudents" text="View Students" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickSubjectSelection" text="Subject Selection" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#clickGrades" text="Grading" />
+                  <MenuItem mnemonicParsing="false" onAction="#clickTeachers" text="Teachers" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Marks Entry">
+               <items>
+                  <Menu mnemonicParsing="false" text="Form 1">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1EnglishEntry" text="English" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1KiswahiliEntry" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1MathsEntry" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1ChemistryEntry" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1PhysicsEntry" text="Physics" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1BiologyEntry" text="Biology" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1HistoryEntry" text="History" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1GeographyEntry" text="Geography" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1CreEntry" text="Cre" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1BusinessEntry" text="Business" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm1AgricultureEntry" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 2">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2EnglishEntry" text="English" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2KiswahiliEntry" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2MathsEntry" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2ChemistryEntry" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2PhysicsEntry" text="Physics" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2BiologyEntry" text="Biology" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2HistoryEntry" text="History" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2GeographyEntry" text="Geography" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2CreEntry" text="Cre" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2BusinessEntry" text="Business" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm2AgricultureEntry" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 3">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3EnglishEntry" text="English" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3KiswahiliEntry" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3MathsEntry" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3ChemistryEntry" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3PhysicsEntry" text="Physics" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3BiologyEntry" text="Biology" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3HistoryEntry" text="History" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3GeographyEntry" text="Geography" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3CreEntry" text="Cre" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3BusinessEntry" text="Business" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm3AgricultureEntry" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 4">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4EnglishEntry" text="English" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4KiswahiliEntry" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4MathsEntry" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4ChemistryEntry" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4PhysicsEntry" text="Physics" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4BiologyEntry" text="Biology" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4HistoryEntry" text="History" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4GeographyEntry" text="Geography" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4CreEntry" text="Cre" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4BusinessEntry" text="Business" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickForm4AgricultureEntry" text="Agriculture" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Results">
+               <items>
+                  <Menu mnemonicParsing="false" text="Form 1">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#clickForm1Term1Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term1Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term1Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term1AvgResults" text="Average" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term2Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term2Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term2Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term2AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term3Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term3Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term3Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm1Term3AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 2">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term1Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term1Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term1Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term1AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term2Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term2Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term2Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term2AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term3Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term3Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term3Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm2Term3AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 3">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term1Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term1Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term1Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term1AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term2Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term2Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term2Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term2AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term3Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term3Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term3Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm3Term3AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 4">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term1Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term1Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term1Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term1AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term2Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term2Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term2Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term2AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term3Exam1Results" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term3Exam2Results" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term3Exam3Results" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" onAction="#clickForm4Term3AvgResults" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#clickHelpAbout" text="About" />
+                  <MenuItem mnemonicParsing="false" text="Licenses" />
+                  <MenuItem mnemonicParsing="false" text="Registration code" />
+                  <MenuItem mnemonicParsing="false" text="User Manual" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

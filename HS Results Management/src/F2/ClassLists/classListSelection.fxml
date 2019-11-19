@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="303.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="F2.ClassLists.ClassListSelection">
+   <children>
+      <ComboBox fx:id="cbTerm" layoutX="119.0" layoutY="101.0" prefHeight="25.0" prefWidth="199.0" promptText="--select term--" />
+      <ComboBox fx:id="cbExam" layoutX="119.0" layoutY="175.0" prefHeight="25.0" prefWidth="199.0" promptText="--select exam--" />
+      <Button layoutX="119.0" layoutY="235.0" mnemonicParsing="false" onAction="#selection" prefHeight="25.0" prefWidth="199.0" text="View" />
+      <Label layoutX="96.0" layoutY="30.0" text="Form 2 Exam Results">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

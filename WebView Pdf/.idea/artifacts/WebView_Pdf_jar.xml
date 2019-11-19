@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WebView Pdf:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebView_Pdf_jar</output-path>
+    <root id="archive" name="WebView Pdf.jar">
+      <element id="module-output" name="WebView Pdf" />
+      <element id="extracted-dir" path="C:/Java Libs/commons-io-2.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

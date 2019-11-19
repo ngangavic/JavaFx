@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="692.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="F4.ReportForms.T2.BioHisAgri">
+   <children>
+      <Label layoutX="168.0" layoutY="14.0" prefHeight="40.0" prefWidth="354.0" text="SCHOOL NAME">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="113.0" fitWidth="156.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/class.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="168.0" layoutY="36.0" prefHeight="47.0" prefWidth="354.0" text="P.O BOX 3211, LOCACTION." />
+      <Label layoutX="168.0" layoutY="73.0" prefHeight="29.0" prefWidth="354.0" text="TELL: 02012239848" />
+      <Label layoutX="232.0" layoutY="103.0" prefHeight="29.0" prefWidth="113.0" text="REPORT FORM" />
+      <Label layoutX="21.0" layoutY="134.0" text="ADM:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="adm" layoutX="68.0" layoutY="132.0" prefHeight="25.0" prefWidth="113.0" text="767NH7">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="134.0" prefHeight="25.0" prefWidth="51.0" text="NAME:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="231.0" layoutY="134.0" prefHeight="25.0" prefWidth="193.0" text="BLA BLA BLA">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="442.0" layoutY="134.0" prefHeight="25.0" prefWidth="51.0" text="CLASS:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="494.0" layoutY="134.0" prefHeight="25.0" prefWidth="96.0" text="FORM 4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="158.0" text="POS:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pos" layoutX="61.0" layoutY="156.0" text="1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="156.0" text="OUT OF">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="all" layoutX="142.0" layoutY="156.0" text="100">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="180.0" text="SUBJECTS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="180.0" text="EXAM 1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="180.0" text="EXAM 2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="180.0" text="EXAM 3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="365.0" layoutY="180.0" text="AVERAGE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="209.0" text="English">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="236.0" text="Kiswahili">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="263.0" text="Mathematics">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="290.0" text="Biology">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="314.0" text="Chemistry">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="340.0" text="History">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="388.0" text="Total">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="415.0" text="Average">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="455.0" text="Class teacher comments:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="454.0" prefHeight="20.0" prefWidth="395.0" text="______________________________________________________________________________" />
+      <Label layoutX="24.0" layoutY="482.0" prefHeight="17.0" prefWidth="553.0" text="_____________________________________________________________________________________________________________" />
+      <Label layoutX="25.0" layoutY="511.0" text="Principal comments:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="513.0" prefHeight="17.0" prefWidth="419.0" text="___________________________________________________________________________________" />
+      <Label layoutX="23.0" layoutY="539.0" prefHeight="17.0" prefWidth="546.0" text="_____________________________________________________________________________________________________________" />
+      <Label fx:id="engEx1" layoutX="166.0" layoutY="214.0" text="00" />
+      <Label fx:id="kisEx1" layoutX="166.0" layoutY="241.0" text="00" />
+      <Label fx:id="matEx1" layoutX="166.0" layoutY="268.0" text="00" />
+      <Label fx:id="bioEx1" layoutX="166.0" layoutY="295.0" text="00" />
+      <Label fx:id="chemEx1" layoutX="166.0" layoutY="319.0" text="00" />
+      <Label fx:id="hisEx1" layoutX="166.0" layoutY="345.0" text="00" />
+      <Label fx:id="totalEx1" layoutX="166.0" layoutY="393.0" text="000" />
+      <Label fx:id="avgEx1" layoutX="166.0" layoutY="420.0" text="00" />
+      <Label fx:id="engEx2" layoutX="232.0" layoutY="214.0" text="00" />
+      <Label fx:id="kisEx2" layoutX="232.0" layoutY="241.0" text="00" />
+      <Label fx:id="matEx2" layoutX="232.0" layoutY="268.0" text="00" />
+      <Label fx:id="bioEx2" layoutX="232.0" layoutY="295.0" text="00" />
+      <Label fx:id="chemEx2" layoutX="232.0" layoutY="319.0" text="00" />
+      <Label fx:id="hisEx2" layoutX="232.0" layoutY="345.0" text="00" />
+      <Label fx:id="totalEx2" layoutX="232.0" layoutY="393.0" text="000" />
+      <Label fx:id="avgEx2" layoutX="232.0" layoutY="420.0" text="00" />
+      <Label fx:id="engEx3" layoutX="300.0" layoutY="214.0" text="00" />
+      <Label fx:id="kisEx3" layoutX="300.0" layoutY="241.0" text="00" />
+      <Label fx:id="matEx3" layoutX="300.0" layoutY="268.0" text="00" />
+      <Label fx:id="bioEx3" layoutX="300.0" layoutY="295.0" text="00" />
+      <Label fx:id="chemEx3" layoutX="300.0" layoutY="319.0" text="00" />
+      <Label fx:id="hisEx3" layoutX="300.0" layoutY="345.0" text="00" />
+      <Label fx:id="totalEx3" layoutX="300.0" layoutY="393.0" text="000" />
+      <Label fx:id="avgEx3" layoutX="300.0" layoutY="420.0" text="00" />
+      <Label fx:id="engAvg" layoutX="378.0" layoutY="214.0" text="00" />
+      <Label fx:id="kisAvg" layoutX="378.0" layoutY="241.0" text="00" />
+      <Label fx:id="matAvg" layoutX="378.0" layoutY="268.0" text="00" />
+      <Label fx:id="bioAvg" layoutX="378.0" layoutY="295.0" text="00" />
+      <Label fx:id="chemAvg" layoutX="378.0" layoutY="319.0" text="00" />
+      <Label fx:id="hisAvg" layoutX="378.0" layoutY="345.0" text="00" />
+      <Label fx:id="totalAvg" layoutX="378.0" layoutY="393.0" text="000" />
+      <Label fx:id="avgAvg" layoutX="378.0" layoutY="420.0" text="00" />
+      <Label fx:id="engAvgGrade" layoutX="404.0" layoutY="214.0" text="E" />
+      <Label fx:id="kisAvgGrade" layoutX="404.0" layoutY="241.0" text="E" />
+      <Label fx:id="matAvgGrade" layoutX="404.0" layoutY="268.0" text="E" />
+      <Label fx:id="bioAvgGrade" layoutX="404.0" layoutY="295.0" text="E" />
+      <Label fx:id="chemAvgGrade" layoutX="404.0" layoutY="319.0" text="E" />
+      <Label fx:id="hisAvgGrade" layoutX="404.0" layoutY="345.0" text="E" />
+      <Label fx:id="avgAvgGrade" layoutX="404.0" layoutY="420.0" text="E" />
+      <Label fx:id="engEx1Grade" layoutX="186.0" layoutY="214.0" text="E" />
+      <Label fx:id="kisEx1Grade" layoutX="186.0" layoutY="241.0" text="E" />
+      <Label fx:id="matEx1Grade" layoutX="186.0" layoutY="268.0" text="E" />
+      <Label fx:id="bioEx1Grade" layoutX="186.0" layoutY="295.0" text="E" />
+      <Label fx:id="chemEx1Grade" layoutX="186.0" layoutY="319.0" text="E" />
+      <Label fx:id="hisEx1Grade" layoutX="186.0" layoutY="345.0" text="E" />
+      <Label fx:id="avgEx1Grade" layoutX="186.0" layoutY="420.0" text="E" />
+      <Label fx:id="engEx2Grade" layoutX="249.0" layoutY="214.0" text="E" />
+      <Label fx:id="kisEx2Grade" layoutX="249.0" layoutY="241.0" text="E" />
+      <Label fx:id="matEx2Grade" layoutX="249.0" layoutY="268.0" text="E" />
+      <Label fx:id="bioEx2Grade" layoutX="249.0" layoutY="295.0" text="E" />
+      <Label fx:id="chemEx2Grade" layoutX="249.0" layoutY="319.0" text="E" />
+      <Label fx:id="hisEx2Grade" layoutX="249.0" layoutY="345.0" text="E" />
+      <Label fx:id="avgEx2Grade" layoutX="249.0" layoutY="420.0" text="E" />
+      <Label fx:id="engEx3Grade" layoutX="317.0" layoutY="214.0" text="E" />
+      <Label fx:id="kisEx3Grade" layoutX="317.0" layoutY="241.0" text="E" />
+      <Label fx:id="matEx3Grade" layoutX="317.0" layoutY="268.0" text="E" />
+      <Label fx:id="bioEx3Grade" layoutX="317.0" layoutY="295.0" text="E" />
+      <Label fx:id="chemEx3Grade" layoutX="317.0" layoutY="319.0" text="E" />
+      <Label fx:id="hisEx3Grade" layoutX="317.0" layoutY="345.0" text="E" />
+      <Label fx:id="avgEx3Grade" layoutX="317.0" layoutY="420.0" text="E" />
+      <Label layoutX="460.0" layoutY="180.0" text="TEACHER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="366.0" text="Agriculture">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="agriEx1" layoutX="166.0" layoutY="371.0" text="00" />
+      <Label fx:id="agriEx2" layoutX="232.0" layoutY="371.0" text="00" />
+      <Label fx:id="agriEx3" layoutX="300.0" layoutY="371.0" text="00" />
+      <Label fx:id="agriAvg" layoutX="378.0" layoutY="371.0" text="00" />
+      <Label fx:id="agriAvgGrade" layoutX="404.0" layoutY="371.0" text="E" />
+      <Label fx:id="agriEx1Grade" layoutX="186.0" layoutY="371.0" text="E" />
+      <Label fx:id="agriEx2Grade" layoutX="249.0" layoutY="371.0" text="E" />
+      <Label fx:id="agriEx3Grade" layoutX="317.0" layoutY="371.0" text="E" />
+      <Label layoutX="558.0" layoutY="132.0" prefHeight="25.0" prefWidth="51.0" text="TERM:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="610.0" layoutY="132.0" prefHeight="25.0" prefWidth="77.0" text="TERM 2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="engTeacher" layoutX="466.0" layoutY="212.0" prefWidth="150.0" text="Label" />
+      <Label fx:id="kisTeacher" layoutX="467.0" layoutY="234.0" prefWidth="150.0" text="Label" />
+      <Label fx:id="matTeacher" layoutX="467.0" layoutY="260.0" prefWidth="150.0" text="Label" />
+      <Label fx:id="bioTeacher" layoutX="468.0" layoutY="287.0" prefWidth="150.0" text="Label" />
+      <Label fx:id="chemTeacher" layoutX="468.0" layoutY="318.0" prefWidth="150.0" text="Label" />
+      <Label fx:id="hisTeacher" layoutX="468.0" layoutY="345.0" prefWidth="150.0" text="Label" />
+      <Label fx:id="agriTeacher" layoutX="468.0" layoutY="366.0" prefWidth="150.0" text="Label" />
+      <Button layoutX="496.0" layoutY="50.0" mnemonicParsing="false" onAction="#printPassEx1" text="Print Exam 1" />
+      <Button layoutX="497.0" layoutY="84.0" mnemonicParsing="false" onAction="#printPassEx2" text="Print Exam 2" />
+      <Button layoutX="592.0" layoutY="52.0" mnemonicParsing="false" onAction="#printPassEx3" text="Print Exam 3" />
+      <Button layoutX="592.0" layoutY="85.0" mnemonicParsing="false" onAction="#printPassAvg" text="Print Average" />
+   </children>
+</AnchorPane>

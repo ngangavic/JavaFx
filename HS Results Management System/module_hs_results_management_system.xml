@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_hs_results_management_system" default="compile.module.hs_results_management_system">
+  <dirname property="module.hs_results_management_system.basedir" file="${ant.file.module_hs_results_management_system}"/>
+  
+  <property name="module.jdk.home.hs_results_management_system" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.hs_results_management_system" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.hs_results_management_system" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.hs_results_management_system" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="hs_results_management_system.output.dir" value="${module.hs_results_management_system.basedir}/out/production/HS Results Management System"/>
+  <property name="hs_results_management_system.testoutput.dir" value="${module.hs_results_management_system.basedir}/out/test/HS Results Management System"/>
+  
+  <path id="hs_results_management_system.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="hs_results_management_system.module.production.classpath">
+    <path refid="${module.jdk.classpath.hs_results_management_system}"/>
+    <path refid="library.sqlite-jdbc-3.21.0.classpath"/>
+    <path refid="library.itextpdf-5.4.0.classpath"/>
+    <path refid="library.jcommon-1.0.23.classpath"/>
+    <path refid="library.jfreechart-1.0.19.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.46.classpath"/>
+    <path refid="library.h2-1.4.197.classpath"/>
+    <path refid="library.bctsp-jdk16-1.46.classpath"/>
+    <path refid="library.bcprov-jdk15on-160.classpath"/>
+  </path>
+  
+  <path id="hs_results_management_system.runtime.production.module.classpath">
+    <pathelement location="${hs_results_management_system.output.dir}"/>
+    <path refid="library.sqlite-jdbc-3.21.0.classpath"/>
+    <path refid="library.itextpdf-5.4.0.classpath"/>
+    <path refid="library.jcommon-1.0.23.classpath"/>
+    <path refid="library.jfreechart-1.0.19.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.46.classpath"/>
+    <path refid="library.h2-1.4.197.classpath"/>
+    <path refid="library.bctsp-jdk16-1.46.classpath"/>
+    <path refid="library.bcprov-jdk15on-160.classpath"/>
+  </path>
+  
+  <path id="hs_results_management_system.module.classpath">
+    <path refid="${module.jdk.classpath.hs_results_management_system}"/>
+    <pathelement location="${hs_results_management_system.output.dir}"/>
+    <path refid="library.sqlite-jdbc-3.21.0.classpath"/>
+    <path refid="library.itextpdf-5.4.0.classpath"/>
+    <path refid="library.jcommon-1.0.23.classpath"/>
+    <path refid="library.jfreechart-1.0.19.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.46.classpath"/>
+    <path refid="library.h2-1.4.197.classpath"/>
+    <path refid="library.bctsp-jdk16-1.46.classpath"/>
+    <path refid="library.bcprov-jdk15on-160.classpath"/>
+  </path>
+  
+  <path id="hs_results_management_system.runtime.module.classpath">
+    <pathelement location="${hs_results_management_system.testoutput.dir}"/>
+    <pathelement location="${hs_results_management_system.output.dir}"/>
+    <path refid="library.sqlite-jdbc-3.21.0.classpath"/>
+    <path refid="library.itextpdf-5.4.0.classpath"/>
+    <path refid="library.jcommon-1.0.23.classpath"/>
+    <path refid="library.jfreechart-1.0.19.classpath"/>
+    <path refid="library.mysql-connector-java-5.1.46.classpath"/>
+    <path refid="library.h2-1.4.197.classpath"/>
+    <path refid="library.bctsp-jdk16-1.46.classpath"/>
+    <path refid="library.bcprov-jdk15on-160.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.hs_results_management_system">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.hs_results_management_system">
+    <patternset refid="excluded.from.module.hs_results_management_system"/>
+  </patternset>
+  
+  <path id="hs_results_management_system.module.sourcepath">
+    <dirset dir="${module.hs_results_management_system.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.hs_results_management_system" depends="compile.module.hs_results_management_system.production,compile.module.hs_results_management_system.tests" description="Compile module HS Results Management System"/>
+  
+  <target name="compile.module.hs_results_management_system.production" depends="register.custom.compilers" description="Compile module HS Results Management System; production classes">
+    <mkdir dir="${hs_results_management_system.output.dir}"/>
+    <javac2 destdir="${hs_results_management_system.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.hs_results_management_system}/javac">
+      <compilerarg line="${compiler.args.hs_results_management_system}"/>
+      <bootclasspath refid="hs_results_management_system.module.bootclasspath"/>
+      <classpath refid="hs_results_management_system.module.production.classpath"/>
+      <src refid="hs_results_management_system.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.hs_results_management_system"/>
+    </javac2>
+    
+    <copy todir="${hs_results_management_system.output.dir}">
+      <fileset dir="${module.hs_results_management_system.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.hs_results_management_system.tests" depends="register.custom.compilers,compile.module.hs_results_management_system.production" description="compile module HS Results Management System; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.hs_results_management_system" description="cleanup module">
+    <delete dir="${hs_results_management_system.output.dir}"/>
+    <delete dir="${hs_results_management_system.testoutput.dir}"/>
+  </target>
+</project>

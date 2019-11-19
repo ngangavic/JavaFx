@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="456.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.AddEditStudent">
+   <children>
+      <Label fx:id="formLabel" layoutX="111.0" text="ADD STUDENT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="23.0" text="Admission Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adm" layoutX="49.0" layoutY="43.0" prefWidth="250.0" promptText="Admission number" />
+      <Label layoutX="49.0" layoutY="120.0" text="Middle name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="316.0" text="Date of Birth">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fname" layoutX="49.0" layoutY="88.0" prefWidth="250.0" promptText="Firstname" />
+      <TextField fx:id="mname" layoutX="49.0" layoutY="140.0" prefWidth="250.0" promptText="Middle name" />
+      <TextField fx:id="lname" layoutX="49.0" layoutY="190.0" prefWidth="250.0" promptText="Last name" />
+      <TextField fx:id="kcpe" layoutX="49.0" layoutY="238.0" prefWidth="250.0" promptText="kcpe" />
+      <ComboBox fx:id="classes" layoutX="49.0" layoutY="284.0" prefWidth="250.0" promptText="--select class--" />
+      <DatePicker fx:id="dob" layoutX="51.0" layoutY="336.0" prefWidth="250.0" promptText="--select date of birth--" />
+      <Button layoutX="54.0" layoutY="376.0" mnemonicParsing="false" onAction="#insertStudent" prefHeight="25.0" prefWidth="119.0" text="Add Student" />
+      <Button layoutX="189.0" layoutY="376.0" mnemonicParsing="false" onAction="#updateStudent" prefHeight="25.0" prefWidth="119.0" text="Update Student" />
+      <Label layoutX="47.0" layoutY="69.0" text="First Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="168.0" text="Last Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="218.0" text="K.C.P.E">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="264.0" text="CLASS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

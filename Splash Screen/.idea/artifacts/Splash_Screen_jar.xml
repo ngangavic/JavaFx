@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Splash Screen:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Splash_Screen_jar</output-path>
+    <root id="archive" name="Splash Screen.jar">
+      <element id="module-output" name="Splash Screen" />
+    </root>
+  </artifact>
+</component>

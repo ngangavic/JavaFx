@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aboutWindow" onMouseClicked="#closeAbout" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000; -fx-border-style: solid; -fx-border-color: #10e41e; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="about.About">
+   <children>
+      <Separator layoutY="321.0" prefHeight="0.0" prefWidth="608.0" style="-fx-background-color: #fff;" />
+      <Label layoutX="220.0" layoutY="350.0" text="\@2018 Needle Tester Softwares" textFill="WHITE" />
+      <Label layoutX="204.0" text="School Results Calculator" textFill="WHITE">
+         <font>
+            <Font name="Bodoni Bd BT Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="507.0" layoutY="43.0" text="Version 1.0.1" textFill="WHITE" />
+      <Separator layoutX="-7.0" layoutY="69.0" prefHeight="17.0" prefWidth="615.0" />
+      <Label layoutX="105.0" layoutY="86.0" prefHeight="17.0" prefWidth="363.0" text="First Build # NST-249-2018, built on  September 25, 2018 " textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="107.0" prefHeight="17.0" prefWidth="363.0" text="Current Build # NST-2712-2018, built on December 29,2018" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="239.0" layoutY="367.0" text="There is always a way" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="127.0" prefHeight="17.0" prefWidth="68.0" text="Description" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="144.0" prefHeight="17.0" prefWidth="381.0" text="This software is developed to help manage school results. It is capable " textFill="WHITE" />
+      <Label layoutX="104.0" layoutY="160.0" prefHeight="17.0" prefWidth="400.0" text="of doing calculations automatically and produce different reports." textFill="WHITE" />
+      <Label layoutX="104.0" layoutY="177.0" prefHeight="17.0" prefWidth="68.0" text="Information" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="192.0" prefHeight="17.0" prefWidth="381.0" text="If you encounter any problem or error with this software, kindly contact" textFill="WHITE" />
+      <Label layoutX="104.0" layoutY="209.0" prefHeight="17.0" prefWidth="180.0" text="Author: Ng'ang'a Victor" textFill="WHITE" />
+      <Label layoutX="105.0" layoutY="224.0" prefHeight="17.0" prefWidth="180.0" text="Phone: +254 700352822" textFill="WHITE" />
+      <Label layoutX="104.0" layoutY="237.0" prefHeight="17.0" prefWidth="180.0" text="Email: needletester@gmail.com" textFill="WHITE" />
+      <Label layoutX="104.0" layoutY="250.0" prefHeight="17.0" prefWidth="180.0" text="Website: coming soon" textFill="WHITE" />
+      <Label layoutX="104.0" layoutY="262.0" prefHeight="17.0" prefWidth="68.0" text="Thanks to" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="276.0" prefHeight="17.0" prefWidth="371.0" text="Anyone who assited or supported in developing this software" textFill="WHITE" />
+      <ImageView fx:id="applicationIcon" fitHeight="58.0" fitWidth="107.0" layoutX="155.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icon.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

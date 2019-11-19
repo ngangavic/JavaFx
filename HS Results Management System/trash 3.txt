@@ -1,0 +1,38 @@
+public void openF4T1EntryAgri(){
+        MarksEntry marksEntry = new MarksEntry();
+        marksEntry.dbTableNameT1E1="tbl_f4_t1_ex1";
+        marksEntry.dbTableNameT1E2="tbl_f4_t1_ex2";
+        marksEntry.dbTableNameT1E3="tbl_f4_t1_ex3";
+        marksEntry.dbTableNameT2E1="tbl_f4_t2_ex1";
+        marksEntry.dbTableNameT2E2="tbl_f4_t2_ex2";
+        marksEntry.dbTableNameT2E3="tbl_f4_t2_ex3";
+        marksEntry.dbTableNameT3E1="tbl_f4_t3_ex1";
+        marksEntry.dbTableNameT3E2="tbl_f4_t3_ex2";
+        marksEntry.dbTableNameT3E3="tbl_f4_t3_ex3";
+        marksEntry.dbTableNameT1Avg="tbl_f4_t1_avg";
+        marksEntry.dbTableNameT2Avg="tbl_f4_t2_avg";
+        marksEntry.dbTableNameT3Avg="tbl_f4_t3_avg";
+        marksEntry.dbClassName="FORM_1";
+        marksEntry.schName="WAVES ACADEMY LTD";
+        marksEntry.clsName="Form 4";
+        marksEntry.dbSubjectTable="tbl_f4_agri";
+        marksEntry.subName="AGRICULTURE";
+        marksEntry.sbj="agri";
+        marksEntry.sbjg="agrig";
+        marksEntry.pn="p11";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("../exams/marksEntry.fxml"));
+
+            MarksEntry marksEntry1 = (MarksEntry) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 4 AGRICULTURE[Marks Entry]");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }

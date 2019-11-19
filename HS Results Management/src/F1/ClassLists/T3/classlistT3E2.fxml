@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="F1.ClassLists.T3.ClasslistT3E2">
+   <children>
+      <Separator layoutY="24.0" prefWidth="1366.0" />
+      <TableView fx:id="tableAllResults" layoutX="6.0" layoutY="78.0" onMouseClicked="#onStudentClick" prefHeight="507.0" prefWidth="1354.0">
+         <columns>
+            <TableColumn fx:id="positionColumn" prefWidth="40.0" text="Pos" />
+            <TableColumn fx:id="admColumn" prefWidth="89.0" text="Adm" />
+            <TableColumn fx:id="nameColumn" prefWidth="250.0" text="Name" />
+            <TableColumn fx:id="engColumn" prefWidth="40.0" text="Eng" />
+            <TableColumn fx:id="engGrade" prefWidth="25.0" />
+            <TableColumn fx:id="kisColumn" prefWidth="40.0" text="Kis" />
+            <TableColumn fx:id="kisGrade" prefWidth="25.0" />
+            <TableColumn fx:id="matColumn" prefWidth="40.0" text="Mat" />
+            <TableColumn fx:id="matGrade" prefWidth="25.0" />
+            <TableColumn fx:id="bioColumn" prefWidth="40.0" text="Bio" />
+            <TableColumn fx:id="bioGrade" prefWidth="25.0" />
+            <TableColumn fx:id="chemColumn" prefWidth="40.0" text="Chem" />
+            <TableColumn fx:id="chemGrade" prefWidth="25.0" />
+            <TableColumn fx:id="phyColumn" prefWidth="40.0" text="Phy" />
+            <TableColumn fx:id="phyGrade" prefWidth="25.0" />
+            <TableColumn fx:id="geoColumn" prefWidth="40.0" text="Geo" />
+            <TableColumn fx:id="geoGrade" prefWidth="25.0" />
+            <TableColumn fx:id="hisColumn" prefWidth="40.0" text="His" />
+            <TableColumn fx:id="hisGrade" prefWidth="25.0" />
+            <TableColumn fx:id="creColumn" prefWidth="40.0" text="Cre" />
+            <TableColumn fx:id="creGrade" prefWidth="25.0" />
+            <TableColumn fx:id="busColumn" prefWidth="40.0" text="Bus" />
+            <TableColumn fx:id="busGrade" prefWidth="25.0" />
+            <TableColumn fx:id="agriColumn" prefWidth="40.0" text="Agri" />
+            <TableColumn fx:id="agriGrade" prefWidth="25.0" />
+            <TableColumn fx:id="totalColumn" prefWidth="42.0" text="Total" />
+            <TableColumn fx:id="avgColumn" prefWidth="70.0" text="Avg" />
+            <TableColumn fx:id="gradeColumn" prefWidth="38.0" text="Grade" />
+            <TableColumn fx:id="kcpeColumn" prefWidth="50.0" text="K.C.P.E" />
+         </columns>
+      </TableView>
+      <Label layoutX="367.0" layoutY="40.0" text="CLASS:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="40.0" text="SUBJECT:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="42.0" prefHeight="17.0" prefWidth="62.0" text="FORM 1" />
+      <Label layoutX="543.0" layoutY="42.0" prefHeight="17.0" prefWidth="82.0" text="ALL SUBJECTS" />
+      <Label layoutX="633.0" layoutY="41.0" text="TERM:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="678.0" layoutY="43.0" prefHeight="17.0" prefWidth="82.0" text="TERM 3" />
+      <Button layoutX="1306.0" layoutY="37.0" mnemonicParsing="false" onAction="#showData" text="Refresh" />
+      <Button layoutX="1247.0" layoutY="37.0" mnemonicParsing="false" onAction="#printPass" text="Print" />
+      <Button layoutX="1172.0" layoutY="37.0" mnemonicParsing="false" onAction="#printPassAll" text="Print All" />
+      <Label layoutX="52.0" layoutY="39.0" text="SCHOOL:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="42.0" prefHeight="17.0" prefWidth="240.0" text="SAMPLE SCHOOL NAME" />
+      <Label layoutX="731.0" layoutY="41.0" text="EXAM:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="782.0" layoutY="43.0" prefHeight="17.0" prefWidth="82.0" text="EXAM 2" />
+      <MenuBar prefHeight="25.0" prefWidth="1366.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Synchronize" />
+                  <MenuItem mnemonicParsing="false" text="Backup system" />
+                  <MenuItem mnemonicParsing="false" text="Close system" />
+                  <MenuItem mnemonicParsing="false" text="Search Results" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Admin">
+               <items>
+                  <Menu mnemonicParsing="false" text="Students">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Add Students" />
+                        <MenuItem mnemonicParsing="false" text="View Students" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Grading" />
+                  <MenuItem mnemonicParsing="false" text="Teachers" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Marks Entry">
+               <items>
+                  <Menu mnemonicParsing="false" text="Form 1">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 2">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 3">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 4">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Results">
+               <items>
+                  <Menu mnemonicParsing="false" text="Form 1">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 2">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 3">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 4">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" text="Licenses" />
+                  <MenuItem mnemonicParsing="false" text="Registration code" />
+                  <MenuItem mnemonicParsing="false" text="User Manual" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

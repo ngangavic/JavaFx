@@ -1,0 +1,311 @@
+@FXML void openF1T1Avg(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t1_avg";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 1";
+        showClasslist.exName="Exam Avg";
+        showClasslist.currentSetting="F1T1AVG";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 1 AVERAGE");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T1Ex1(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t1_ex1";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 1";
+        showClasslist.exName="Exam 1";
+        showClasslist.currentSetting="F1T1E1";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 1 EXAM 1");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T1Ex2(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t1_ex2";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 1";
+        showClasslist.exName="Exam 2";
+        showClasslist.currentSetting="F1T1E2";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 1 EXAM 2");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T1Ex3(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t1_ex3";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 1";
+        showClasslist.exName="Exam 3";
+        showClasslist.currentSetting="F1T1E3";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 1 EXAM 3");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T2Avg(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t2_avg";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 2";
+        showClasslist.exName="Exam Avg";
+        showClasslist.currentSetting="F1T2AVG";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 2 AVERAGE");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T2Ex1(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t2_ex1";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 2";
+        showClasslist.exName="Exam 1";
+        showClasslist.currentSetting="F1T2E1";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 2 EXAM 1");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T2Ex2(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t2_ex2";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 2";
+        showClasslist.exName="Exam 2";
+        showClasslist.currentSetting="F1T2E2";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 2 EXAM 2");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T2Ex3(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t2_ex3";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 2";
+        showClasslist.exName="Exam 3";
+        showClasslist.currentSetting="F1T2E3";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 2 EXAM 3");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T3Avg(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t3_avg";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 3";
+        showClasslist.exName="Exam Avg";
+        showClasslist.currentSetting="F1T3AVG";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 3 AVERAGE");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T3Ex1(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t1_ex3";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 3";
+        showClasslist.exName="Exam 1";
+        showClasslist.currentSetting="F1T3E3";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 3 EXAM 1");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T3Ex2(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t3_ex2";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 3";
+        showClasslist.exName="Exam 2";
+        showClasslist.currentSetting="F1T3E2";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 3 EXAM 2");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML void openF1T3Ex3(){
+        ShowClasslist showClasslist = new ShowClasslist();
+        showClasslist.dbTableName="tbl_f1_t3_ex3";
+        showClasslist.dbClassName="FORM_1";
+        showClasslist.schName="WAVES ACADEMY LTD";
+        showClasslist.clsName="Form 1";
+        showClasslist.tmName="Term 3";
+        showClasslist.exName="Exam 3";
+        showClasslist.currentSetting="F1T3E3";
+        try{
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Pane root = (Pane)loader.load(getClass().getResource("showClasslist.fxml"));
+
+            ShowClasslist showClasslist3 = (ShowClasslist) loader.getController();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.setTitle("FORM 1 TERM 3 EXAM 3");
+            stage.setResizable(true);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }

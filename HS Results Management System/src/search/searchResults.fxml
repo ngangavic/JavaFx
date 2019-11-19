@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="search.SearchResults">
+   <children>
+      <Label layoutX="32.0" layoutY="39.0" text="SCHOOL:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="schoolName" layoutX="101.0" layoutY="40.0" text="SAMPLE SCHOOL NAME" />
+      <Label layoutX="296.0" layoutY="39.0" text="Search Results for Adm:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="1133.0" layoutY="36.0" mnemonicParsing="false" onAction="#printReportForms" text="Print All" />
+      <Button layoutX="1210.0" layoutY="36.0" mnemonicParsing="false" onAction="#printClassReport" text="Print" />
+      <Button layoutX="1267.0" layoutY="35.0" mnemonicParsing="false" text="Refresh" />
+      <TableView fx:id="tableResults" layoutX="7.0" layoutY="151.0" prefHeight="74.0" prefWidth="1352.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="FORM 1">
+               <columns>
+                <TableColumn fx:id="admCol" prefWidth="70.0" text="Adm" />
+                  <TableColumn fx:id="nameCol" prefWidth="230.0" text="Name" />
+                  <TableColumn fx:id="engCol" prefWidth="40.0" text="Eng" />
+                  <TableColumn fx:id="engGr" prefWidth="25.0" />
+                  <TableColumn fx:id="kisCol" prefWidth="40.0" text="Kis" />
+                  <TableColumn fx:id="kisGr" prefWidth="25.0" />
+                  <TableColumn fx:id="matCol" prefWidth="40.0" text="Mat" />
+                  <TableColumn fx:id="matGr" prefWidth="25.0" />
+                  <TableColumn fx:id="chemCol" prefWidth="40.0" text="Chem" />
+                  <TableColumn fx:id="chemGr" prefWidth="25.0" />
+                  <TableColumn fx:id="bioCol" prefWidth="40.0" text="Bio" />
+                  <TableColumn fx:id="bioGr" prefWidth="25.0" />
+                  <TableColumn fx:id="phyCol" prefWidth="40.0" text="Phy" />
+                  <TableColumn fx:id="phyGr" prefWidth="25.0" />
+                  <TableColumn fx:id="geoCol" prefWidth="40.0" text="Geo" />
+                  <TableColumn fx:id="geoGr" prefWidth="25.0" />
+                  <TableColumn fx:id="hisCol" prefWidth="40.0" text="His" />
+                  <TableColumn fx:id="hisGr" prefWidth="25.0" />
+                  <TableColumn fx:id="creCol" prefWidth="40.0" text="Cre" />
+                  <TableColumn fx:id="creGr" prefWidth="25.0" />
+                  <TableColumn fx:id="busCol" prefWidth="40.0" text="Bus" />
+                  <TableColumn fx:id="busGr" prefWidth="25.0" />
+                  <TableColumn fx:id="agriCol" prefWidth="40.0" text="Agri" />
+                  <TableColumn fx:id="agriGr" prefWidth="25.0" />
+                  <TableColumn fx:id="totalCol" prefWidth="50.0" text="Total" />
+                  <TableColumn fx:id="avgCol" prefWidth="75.0" text="Avg" />
+                  <TableColumn fx:id="pointsCol" prefWidth="60.0" text="Points" />
+                  <TableColumn fx:id="kcpeCol" prefWidth="60.0" text="KCPE" />
+                  <TableColumn prefWidth="50.0" text="Action" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="tableResultsF2" layoutX="8.0" layoutY="236.0" prefHeight="74.0" prefWidth="1352.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="FORM 2">
+               <columns>
+                <TableColumn fx:id="admColF2" prefWidth="70.0" text="Adm" />
+                  <TableColumn fx:id="nameColF2" prefWidth="230.0" text="Name" />
+                  <TableColumn fx:id="engColF2" prefWidth="40.0" text="Eng" />
+                  <TableColumn fx:id="engGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="kisColF2" prefWidth="40.0" text="Kis" />
+                  <TableColumn fx:id="kisGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="matColF2" prefWidth="40.0" text="Mat" />
+                  <TableColumn fx:id="matGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="chemColF2" prefWidth="40.0" text="Chem" />
+                  <TableColumn fx:id="chemGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="bioColF2" prefWidth="40.0" text="Bio" />
+                  <TableColumn fx:id="bioGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="phyColF2" prefWidth="40.0" text="Phy" />
+                  <TableColumn fx:id="phyGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="geoColF2" prefWidth="40.0" text="Geo" />
+                  <TableColumn fx:id="geoGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="hisColF2" prefWidth="40.0" text="His" />
+                  <TableColumn fx:id="hisGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="creColF2" prefWidth="40.0" text="Cre" />
+                  <TableColumn fx:id="creGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="busColF2" prefWidth="40.0" text="Bus" />
+                  <TableColumn fx:id="busGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="agriColF2" prefWidth="40.0" text="Agri" />
+                  <TableColumn fx:id="agriGrF2" prefWidth="25.0" />
+                  <TableColumn fx:id="totalColF2" prefWidth="50.0" text="Total" />
+                  <TableColumn fx:id="avgColF2" prefWidth="75.0" text="Avg" />
+                  <TableColumn fx:id="pointsColF2" prefWidth="60.0" text="Points" />
+                  <TableColumn fx:id="kcpeColF2" prefWidth="60.0" text="KCPE" />
+                  <TableColumn prefWidth="50.0" text="Action" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="tableResultsF3" layoutX="7.0" layoutY="326.0" prefHeight="74.0" prefWidth="1352.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="FORM 3">
+               <columns>
+                  <TableColumn fx:id="admColF3" prefWidth="70.0" text="Adm" />
+                  <TableColumn fx:id="nameColF3" prefWidth="230.0" text="Name" />
+                  <TableColumn fx:id="engColF3" prefWidth="40.0" text="Eng" />
+                  <TableColumn fx:id="engGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="kisColF3" prefWidth="40.0" text="Kis" />
+                  <TableColumn fx:id="kisGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="matColF3" prefWidth="40.0" text="Mat" />
+                  <TableColumn fx:id="matGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="chemColF3" prefWidth="40.0" text="Chem" />
+                  <TableColumn fx:id="chemGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="bioColF3" prefWidth="40.0" text="Bio" />
+                  <TableColumn fx:id="bioGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="phyColF3" prefWidth="40.0" text="Phy" />
+                  <TableColumn fx:id="phyGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="geoColF3" prefWidth="40.0" text="Geo" />
+                  <TableColumn fx:id="geoGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="hisColF3" prefWidth="40.0" text="His" />
+                  <TableColumn fx:id="hisGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="creColF3" prefWidth="40.0" text="Cre" />
+                  <TableColumn fx:id="creGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="busColF3" prefWidth="40.0" text="Bus" />
+                  <TableColumn fx:id="busGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="agriColF3" prefWidth="40.0" text="Agri" />
+                  <TableColumn fx:id="agriGrF3" prefWidth="25.0" />
+                  <TableColumn fx:id="totalColF3" prefWidth="50.0" text="Total" />
+                  <TableColumn fx:id="avgColF3" prefWidth="75.0" text="Avg" />
+                  <TableColumn fx:id="pointsColF3" prefWidth="60.0" text="Points" />
+                  <TableColumn fx:id="kcpeColF3" prefWidth="60.0" text="KCPE" />
+                  <TableColumn prefWidth="50.0" text="Action" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <TableView fx:id="tableResultsF4" layoutX="7.0" layoutY="416.0" prefHeight="74.0" prefWidth="1352.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="FORM 4">
+               <columns>
+                  <TableColumn fx:id="admColF4" prefWidth="70.0" text="Adm" />
+                  <TableColumn fx:id="nameColF4" prefWidth="230.0" text="Name" />
+                  <TableColumn fx:id="engColF4" prefWidth="40.0" text="Eng" />
+                  <TableColumn fx:id="engGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="kisColF4" prefWidth="40.0" text="Kis" />
+                  <TableColumn fx:id="kisGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="matColF4" prefWidth="40.0" text="Mat" />
+                  <TableColumn fx:id="matGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="chemColF4" prefWidth="40.0" text="Chem" />
+                  <TableColumn fx:id="chemGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="bioColF4" prefWidth="40.0" text="Bio" />
+                  <TableColumn fx:id="bioGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="phyColF4" prefWidth="40.0" text="Phy" />
+                  <TableColumn fx:id="phyGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="geoColF4" prefWidth="40.0" text="Geo" />
+                  <TableColumn fx:id="geoGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="hisColF4" prefWidth="40.0" text="His" />
+                  <TableColumn fx:id="hisGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="creColF4" prefWidth="40.0" text="Cre" />
+                  <TableColumn fx:id="creGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="busColF4" prefWidth="40.0" text="Bus" />
+                  <TableColumn fx:id="busGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="agriColF4" prefWidth="40.0" text="Agri" />
+                  <TableColumn fx:id="agriGrF4" prefWidth="25.0" />
+                  <TableColumn fx:id="totalColF4" prefWidth="50.0" text="Total" />
+                  <TableColumn fx:id="avgColF4" prefWidth="75.0" text="Avg" />
+                  <TableColumn fx:id="pointsColF4" prefWidth="60.0" text="Points" />
+                  <TableColumn fx:id="kcpeColF4" prefWidth="60.0" text="KCPE" />
+                  <TableColumn prefWidth="50.0" text="Action" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="1366.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Synchronize" />
+                  <MenuItem mnemonicParsing="false" text="Backup system" />
+                  <MenuItem mnemonicParsing="false" text="Search Results" />
+                  <MenuItem mnemonicParsing="false" text="Close system" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Admin">
+               <items>
+                  <Menu mnemonicParsing="false" text="Students">
+                     <items>
+                        <MenuItem fx:id="addBar" mnemonicParsing="false" text="Add Students" />
+                        <MenuItem mnemonicParsing="false" text="View Students" />
+                        <MenuItem mnemonicParsing="false" text="Subject Selection" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Grading" />
+                  <MenuItem mnemonicParsing="false" text="Teachers" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Marks Entry">
+               <items>
+                  <Menu mnemonicParsing="false" text="Form 1">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 2">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 3">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 4">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="English" />
+                        <MenuItem mnemonicParsing="false" text="Kiswahili" />
+                        <MenuItem mnemonicParsing="false" text="Mathematics" />
+                        <MenuItem mnemonicParsing="false" text="Chemistry" />
+                        <MenuItem mnemonicParsing="false" text="Physics" />
+                        <MenuItem mnemonicParsing="false" text="Biology" />
+                        <MenuItem mnemonicParsing="false" text="History" />
+                        <MenuItem mnemonicParsing="false" text="Geography" />
+                        <MenuItem mnemonicParsing="false" text="Cre" />
+                        <MenuItem mnemonicParsing="false" text="Business" />
+                        <MenuItem mnemonicParsing="false" text="Agriculture" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Results">
+               <items>
+                  <Menu mnemonicParsing="false" text="Form 1">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 2">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 3">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Form 4">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Term 1">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 2">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Term 3">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Exam 1" />
+                              <MenuItem mnemonicParsing="false" text="Exam 2" />
+                              <MenuItem mnemonicParsing="false" text="Exam 3" />
+                              <MenuItem mnemonicParsing="false" text="Average" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" text="Licenses" />
+                  <MenuItem mnemonicParsing="false" text="Registration code" />
+                  <MenuItem mnemonicParsing="false" text="User Manual" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label fx:id="admLabel" layoutX="461.0" layoutY="39.0" prefHeight="20.0" prefWidth="56.0" text="Adm" />
+      <Label layoutX="32.0" layoutY="67.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="74.0" layoutY="67.0" prefHeight="17.0" prefWidth="213.0" text="name" />
+      <Label layoutX="33.0" layoutY="93.0" text="DOB:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="dobLabel" layoutX="75.0" layoutY="93.0" prefHeight="17.0" prefWidth="184.0" text="Date of birth" />
+      <Label layoutX="298.0" layoutY="64.0" text="KCSE:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="kcseLabel" layoutX="339.0" layoutY="64.0" prefHeight="20.0" prefWidth="56.0" text="kcse" />
+   </children>
+</AnchorPane>
